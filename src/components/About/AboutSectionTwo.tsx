@@ -17,9 +17,9 @@ const AboutSectionTwo = () => {
     </p>
   );
   return (
-    <section className="py-16 md:py-20 lg:py-28">
+    <section className="py-0 md:py-20 lg:py-28 ">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap items-center">
+        <div className="-mx-4 flex flex-wrap items-center md:pl-14 md:pr-2 3xl:px-0">
           <div className="w-full px-4 lg:w-1/2">
           <FadeInSection animationClass="animate-fade-in-up-10" threshold={0.3}>
             <div
