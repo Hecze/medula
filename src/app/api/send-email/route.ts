@@ -24,7 +24,7 @@ const POST = async (request: any) => {
 
 
     const { data, error } = await resend.emails.send({
-      from: 'DoubleClics.com <onboarding@resend.dev>',
+      from: 'Medula.com <onboarding@resend.dev>',
       to: ['hectorzerrillo85@gmail.com'],
       subject: 'New message from contact form',
       react: EmailTemplate({ firstName: body.name, message: body.message, email: body.email }) as React.ReactElement,

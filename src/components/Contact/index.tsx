@@ -62,7 +62,7 @@ const Contact: React.FC<ContactProps> = ({ bg = true }) => {
   }, [email, name, message]);
 
   return (
-    <FadeInSection animationClass="animate-fade-in-down-10 " threshold={0.25}>
+    <FadeInSection animationClass="animate-fade-in-down-10" threshold={0.25}>
 
 <section id="contact" className={`overflow-hidden ${bg ? "bg-slate-900 py-24 py-16 md:py-20 lg:py-28" : "p-16"}`}>
 

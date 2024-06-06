@@ -6,8 +6,8 @@ import Pricing from "@/components/Pricing";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Page | DoubleClics",
-  description: "Software Automation, Web Development | DoubleClics",
+  title: "About Page | Médula",
+  description: "Software Automation, Web Development | Médula",
   // other metadata
 };
 

@@ -4,8 +4,8 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Page | DoubleClics",
-  description: "Software Automation, Web Development | DoubleClics",
+  title: "Contact Page | Médula",
+  description: "Software Automation, Web Development | Médula",
   // other metadata
 };
 
