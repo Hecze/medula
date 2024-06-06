@@ -25,8 +25,8 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title={t("section1.title")}
-                paragraph={t("section1.paragraph")}
+                title="section1.title"
+                paragraph="section1.paragraph"
                 mb="44px"
               />
 
@@ -36,15 +36,15 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text={t("section1.list.0")} />
-                    <List text={t("section1.list.1")} />
-                    <List text={t("section1.list.2")} />
+                    <List text="section1.list.0" />
+                    <List text="section1.list.1" />
+                    <List text="section1.list.2" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text={t("section1.list.3")} />
-                    <List text={t("section1.list.4")} />
-                    <List text={t("section1.list.5")} />
+                    <List text="section1.list.3" />
+                    <List text="section1.list.4" />
+                    <List text="section1.list.5" />
                   </div>
                 </div>
               </div>

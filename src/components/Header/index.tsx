@@ -95,9 +95,9 @@ const Header = (locale: any) => {
                 <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
+                  width={100}
+                  height={100}
+                  className="hidden w-12 my-[-0.5rem] dark:block"
                 />
               </Link>
             </div>

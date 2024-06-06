@@ -14,11 +14,10 @@ import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import FadeInSection from "@/components/FadeInSection";
 import { Metadata } from "next";
-import ChatBot from "@/components/Chatbot";
 
 export const metadata: Metadata = {
-  title: "DoubleClics",
-  description: "Software Automation, Web Development | DoubleClics",
+  title: "Médula | Diseños increibles",
+  description: "Software Automation, Web Development | Médula",
 };
 
 export default function Home() {

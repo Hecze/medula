@@ -12,8 +12,8 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title={t("title")}
-          paragraph={t("subtitle")}
+          title="Precios"
+          paragraph="Si tienes alguna duda en cual paquete es el mejor para ti, no dudes en contactarnos. Estamos aquí para ayudarte."
           center
           width="665px"
         />
@@ -28,7 +28,7 @@ const Pricing = () => {
                   : "text-dark dark:text-white"
               } mr-4 cursor-pointer text-base font-semibold`}
             >
-              {t("time.monthly")}
+              mensual
             </span>
             <div
               onClick={() => setIsMonthly(!isMonthly)}
@@ -53,41 +53,55 @@ const Pricing = () => {
                   : "pointer-events-none text-primary"
               } ml-4 cursor-pointer text-base font-semibold`}
             >
-              {t("time.yearly")}
+              anual
             </span>
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName={t("plans.0.title")}
+            packageName="Basico"
             price={isMonthly ? "40" : "120"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Páginas webs sencillas y económicas. Ideal para dar visibilidad a restaurantes, tiendas y pequeños negocios."
           >
-            <OfferList text={t("plans.0.features.0")} status="active" />
-            <OfferList text={t("plans.0.features.1")} status="active" />
-            <OfferList text={t("plans.0.features.2")} status="active" />
+            <OfferList text="diseño increible" status="active" />
+            <OfferList text="dominio personalizado" status="active" />
+            <OfferList text="correo personalizado" status="active" />
+            <OfferList text="pagos por internet" status="inactive" />
+            <OfferList text="base de datos" status="inactive" />
+            <OfferList text="analisis de datos" status="inactive" />
+            <OfferList text="analisis de tráfico" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName={t("plans.1.title")}
+            packageName="Profesional"
             price={isMonthly ? "399" : "789"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Páginas web capaces de gestionar clientes, ventas y productos. Ideal para tiendas online y negocios que busquen expandir sus ventas a todo el pais."
           >
-            <OfferList text={t("plans.1.features.0")} status="active" />
-            <OfferList text={t("plans.1.features.1")} status="active" />
-            <OfferList text={t("plans.1.features.2")} status="active" />
+            <OfferList text="diseño increible" status="active" />
+            <OfferList text="dominio personalizado" status="active" />
+            <OfferList text="correo personalizado" status="active" />
+            <OfferList text="automatización de procesos" status="active" />
+            <OfferList text="pagos por internet" status="active" />
+            <OfferList text="base de datos" status="active" />
+            <OfferList text="analisis de datos" status="inactive" />
+            <OfferList text="analisis de tráfico" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName={t("plans.2.title")}
+            packageName="Empresarial"
             price={isMonthly ? "589" : "999"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Páginas web con todas las funcionalidades necesarias para gestionar grandes cantidades de clientes, ventas y productos. Ideal para empresas que busquen expandir sus ventas a todo el mundo. Te permite analizar cada click, cada segundo que pasan en que sección de tu página y mucho más con tal de maximizar las efectividad. "
           >
-            <OfferList text={t("plans.2.features.0")} status="active" />
-            <OfferList text={t("plans.2.features.1")} status="active" />
-            <OfferList text={t("plans.2.features.2")} status="active" />
+            <OfferList text="diseño increible" status="active" />
+            <OfferList text="dominio personalizado" status="active" />
+            <OfferList text="correo personalizado" status="active" />
+            <OfferList text="automatización de procesos" status="active" />
+            <OfferList text="pagos por internet" status="active" />
+            <OfferList text="base de datos robusta" status="active" />
+            <OfferList text="analisis de datos" status="active" />
+            <OfferList text="analisis de tráfico" status="active" />
           </PricingBox>
         </div>
       </div>

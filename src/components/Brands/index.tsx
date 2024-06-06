@@ -45,8 +45,8 @@ const Brands = () => {
   return (
     <section className="pt-16">
       <div className="container">
-        <h3 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl mb-8 ml-4">
-          title
+        <h3 className="mb-8 text-3xl font-bold text-black dark:text-white sm:text-4xl sm:mb-14 ml-2 sm:ml-4">
+          Clientes Satisfechos
         </h3>
         <div className="px-12 ">
           <div className="bg-slate-200 dark:bg-slate-800 py-4 shadow">

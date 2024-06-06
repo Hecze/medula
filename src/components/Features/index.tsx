@@ -1,6 +1,7 @@
 import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
 import FadeInSection from "@/components/FadeInSection";
+import Image from "next/image";
 import { Feature } from "@/types/feature";
 
 const Features = () => {
@@ -92,23 +93,19 @@ const Features = () => {
   ]
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28">
+      <section id="features" className="py-12 md:py-20 lg:py-24 bg-slate-950">
 
         <div className="container">
           <FadeInSection animationClass="animate-fade-in-down-10" threshold={0.05}>
             <SectionTitle
-              title='title'
-              paragraph='paragraph'
+              title='Flujo de trabajo'
+              paragraph='Conoce nuestra manera de trabajar'
               center
             />
           </FadeInSection>
 
           <FadeInSection animationClass="animate-fade-in-down-20"  threshold={0.25}>
-            <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3 ">
-              {featuresData.map((feature) => (
-                <SingleFeature key={feature.id} feature={feature} />
-              ))}
-            </div>
+            <Image src="/images/flujo/flujo1.svg" alt="features image" width={1100} height={11000} className="mx-auto rounded" />
           </FadeInSection>
 
         </div>

@@ -70,10 +70,10 @@ const Contact = () => {
               "
               >
                 <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                  title
+                  Conversemos
                 </h2>
                 <p className="mb-12 text-base font-medium text-body-color">
-                  paragraph
+                Nuestro equipo te responderá instantáneamente para atender cualquiera de tus preguntas.
                 </p>
                 <form onSubmit={handleSend}>
                   <div className="-mx-4 flex flex-wrap">
@@ -83,11 +83,11 @@ const Contact = () => {
                           htmlFor="name"
                           className="mb-3 block text-sm font-medium text-dark dark:text-white"
                         >
-                          nameLabel
+                          Nombre
                         </label>
                         <input
                           type="text"
-                          placeholder='namePlaceholder'
+                          placeholder='Escribe tu nombre aquí'
                           className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                           onChange={(e) => setName(e.target.value)}
                           value={name}
@@ -101,11 +101,11 @@ const Contact = () => {
                           htmlFor="email"
                           className="mb-3 block text-sm font-medium text-dark dark:text-white"
                         >
-                          emailLabel
+                          Correo Electrónico
                         </label>
                         <input
                           type="email"
-                          placeholder='emailPlaceholder'
+                          placeholder='Escribe tu correo electrónico aquí'
                           className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                           onChange={(e) => setEmail(e.target.value)}
                           value={email}
@@ -119,12 +119,12 @@ const Contact = () => {
                           htmlFor="message"
                           className="mb-3 block text-sm font-medium text-dark dark:text-white"
                         >
-                          messageLabel
+                          Tu mensaje
                         </label>
                         <textarea
                           name="message"
                           rows={5}
-                          placeholder='messagePlaceholder'
+                          placeholder='Escribe tu mensaje aquí'
                           className="border-stroke w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                           onChange={(e) => setMessage(e.target.value)}
                           value={message}
@@ -134,7 +134,7 @@ const Contact = () => {
                     </div>
                     <div className="w-full px-4">
                     <Button type="submit" disabled={isSubmitting}> {/* Deshabilitar el botón si el formulario se está enviando */}
-                        {isSubmitting ? 'Sending...' : 'sendButton {/* Cambiar el texto del botón durante el envío */}'}
+                        {isSubmitting ? 'Enviando...' : 'Enviar'}
                       </Button>
                     </div>
                   </div>

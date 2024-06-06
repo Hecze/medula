@@ -23,10 +23,10 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Button path="/pricing">
-                  🔥 main-button
+                  🔥 Ver Precios
                   </Button>
                   <Button path="#features" hover={false} color="bg-slate-900">
-                  secondary-button
+                  Contactar
                   </Button>
                 </div>
             </div>
