@@ -64,7 +64,7 @@ const Contact: React.FC<ContactProps> = ({ bg = true }) => {
   return (
     <FadeInSection animationClass="animate-fade-in-down-10 " threshold={0.25}>
 
-<section id="contact" className={`overflow-hidden ${bg ? "bg-slate-900 p-24 py-16 md:py-20 lg:py-28" : "p-16"}`}>
+<section id="contact" className={`overflow-hidden ${bg ? "bg-slate-900 py-24 py-16 md:py-20 lg:py-28" : "p-16"}`}>
 
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">

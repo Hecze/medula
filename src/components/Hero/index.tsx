@@ -38,13 +38,13 @@ const Hero = () => {
                 </div>
             </div>
             </FadeInSection>
-            <FadeInSection animationClass="animate-fade-in-down-20 w-1/2 min-w-[350px] mx-auto"  threshold={0.25}>
+            <FadeInSection animationClass="animate-fade-in-down-20 w-1/2 min-w-[350px] mx-auto hidden lg:grid"  threshold={0.25}>
               <Image
                 src="/images/hero/foco_cohete.svg"
                 width={300}
                 height={300}
                 alt="Hero"
-                className="mx-auto w-3/4 max-w-[750px] sm:mt-0"
+                className=" mx-auto w-3/4 max-w-[750px] sm:mt-0"
               />
             </FadeInSection>
 
