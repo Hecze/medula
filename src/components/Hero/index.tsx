@@ -10,7 +10,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative h-screen z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="relative h-screen z-10 overflow-hidden bg-white pb-16 pt-[100px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
         <div className="container mt-[-3vw]">
           <div className="-mx-4 flex flex-wrap ">
@@ -24,7 +24,7 @@ const Hero = () => {
                   className="mx-auto max-w-full drop-shadow-three dark:drop-shadow-none "
                 />
 
-                <p className="mb-16 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl pl-16 px-8 text-left">
+                <p className="mb-16 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl pl-12 px-6 md:pl-16 md:px-8  text-left">
                 Transformamos ideas en soluciones digitales efectivas, creando sitios y aplicaciones web que impulsan tu negocio hacia adelante.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
