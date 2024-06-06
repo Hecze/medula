@@ -54,8 +54,9 @@ const projectsData: Brand[] = [
     id: 8,
     name: "reniec",
     href: "https://www.gob.pe/reniec",
-    image: "/images/projects/proga-competi.svg",
-    imageLight: "/images/projects/progra-competi.svg",
+    image: "/images/projects/eneisoft.svg",
+    imageLight: "/images/projects/eneisoft.svg",
+
   },
   {
     id: 9,
@@ -68,10 +69,33 @@ const projectsData: Brand[] = [
     id: 10,
     name: "reniec",
     href: "https://www.gob.pe/reniec",
-    image: "/images/projects/eneisoft.svg",
-    imageLight: "/images/projects/eneisoft.svg",
+
+    image: "/images/projects/proga-competi.svg",
+    imageLight: "/images/projects/progra-competi.svg",
   },
-  
+  {
+    id: 11,
+    name: "reniec",
+    href: "https://www.gob.pe/reniec",
+    image: "/images/projects/genetica-cuyistica.svg",
+    imageLight: "/images/projects/genetica-cuyistica.svg",
+    
+  },
+  {
+    id: 12,
+    name: "reniec",
+    href: "https://www.gob.pe/reniec",
+    image: "/images/projects/barrio-seguro.svg",
+    imageLight: "/images/projects/barrio-seguro.svg",
+  },
+  {
+    id: 13,
+    name: "reniec",
+    href: "https://www.gob.pe/reniec",
+    image: "/images/projects/anecdotes.svg",
+    imageLight: "/images/projects/anecdotes.svg",
+
+  },
 ];
 
 export default projectsData;
