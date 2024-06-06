@@ -13,7 +13,7 @@ const Comunication = () => {
           <FadeInSection animationClass="animate-fade-in-down-10" threshold={0.05}>
             <SectionTitle
               title='Comunicación constante'
-              paragraph='Estaras informado en todo momento de los avances de tu proyecto, con retroalimentación constante y actualizaciones en tiempo real.'
+              paragraph='Estaras informado en todo momento de los avances de tu proyecto, con retroalimentación continua y actualizaciones en tiempo real.'
               center
             />
           </FadeInSection>
