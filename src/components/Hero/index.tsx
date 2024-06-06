@@ -17,7 +17,7 @@ const Hero = () => {
           <FadeInSection animationClass="animate-fade-in-up-20 pl-4 w-1/2 min-w-[350px] mx-auto"  threshold={0.25}>
               <div className="mx-auto max-w-[600px] text-center ">
                 <Image  
-                  src="/images/hero/logo_nombre.png"
+                  src="/images/hero/logo_nombre.svg"
                   alt="Hero"
                   width={300}
                   height={300}

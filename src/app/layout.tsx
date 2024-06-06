@@ -2,24 +2,27 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import './globals.css';
 import { Providers } from './providers';
+import { useEffect } from 'react';
 
-export default async function LocaleLayout({
+export default function LocaleLayout({
   children,
-  params: {locale}
+  params: { locale }
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }) {
-  // Providing all messages to the client
-  // side is the easiest way to get started
- 
+
+    if (typeof window !== "undefined") {
+      document.documentElement.classList.add('dark');
+    }
+
+
   return (
     <html lang={locale}>
       <body>
         <Providers>
-        <Header locale={locale} />
+          <Header locale={locale} />
           {children}
-          <Footer />
         </Providers>
       </body>
     </html>
