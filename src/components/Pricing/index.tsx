@@ -10,9 +10,8 @@ const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <FadeInSection animationClass="animate-fade-in-down-10" threshold={0.3}>
     <section id="pricing" className="relative z-10 py-16 md:py-12 lg:py-14">
-      <div className="container">
+      <div className="container animate-fade-in-down-10">
         <SectionTitle
           title="Precios"
           paragraph="Los precios son durante el primer año, después de este periodo la tarifa se reduce a la mitad. Si tienes alguna duda en cual paquete es el mejor para ti, no dudes en contactarnos. Estamos aquí para ayudarte."
@@ -167,7 +166,6 @@ const Pricing = () => {
         </svg>
       </div>
     </section>
-    </FadeInSection>
   );
 };
 
