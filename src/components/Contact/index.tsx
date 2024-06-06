@@ -5,7 +5,11 @@ import Button from "../button";
 import FadeInSection from "../FadeInSection";
 import Script from "next/script";
 
-const Contact = () => {
+interface ContactProps {
+  bg?: boolean;
+}
+
+const Contact: React.FC<ContactProps> = ({ bg = true }) => {
 
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
@@ -58,11 +62,12 @@ const Contact = () => {
   }, [email, name, message]);
 
   return (
-    <FadeInSection animationClass="animate-fade-in-down-10 py-16 md:py-20 lg:py-28" threshold={0.25}>
+    <FadeInSection animationClass="animate-fade-in-down-10 " threshold={0.25}>
 
-      <section id="contact" className="overflow-hidden ">
+<section id="contact" className={`overflow-hidden ${bg ? "bg-slate-900 p-24 py-16 md:py-20 lg:py-28" : "p-16"}`}>
+
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="-mx-4 flex flex-wrap justify-center">
             <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
               <div
                 className="mb-12 rounded-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
@@ -140,8 +145,6 @@ const Contact = () => {
                   </div>
                 </form>
               </div>
-            </div>
-            <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
             </div>
           </div>
         </div>

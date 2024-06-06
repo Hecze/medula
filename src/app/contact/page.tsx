@@ -14,9 +14,9 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="Contact Page"
+         // Add the required attribute(s) here
       />
-
-      <Contact />
+      <Contact bg={false}/>
     </>
   );
 };

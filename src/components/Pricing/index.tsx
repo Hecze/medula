@@ -13,7 +13,7 @@ const Pricing = () => {
       <div className="container">
         <SectionTitle
           title="Precios"
-          paragraph="Si tienes alguna duda en cual paquete es el mejor para ti, no dudes en contactarnos. Estamos aquí para ayudarte."
+          paragraph="Los precios son durante el primer año, después de este periodo la tarifa se reduce a la mitad. Si tienes alguna duda en cual paquete es el mejor para ti, no dudes en contactarnos. Estamos aquí para ayudarte."
           center
           width="665px"
         />
@@ -28,7 +28,7 @@ const Pricing = () => {
                   : "text-dark dark:text-white"
               } mr-4 cursor-pointer text-base font-semibold`}
             >
-              mensual
+              Mensual
             </span>
             <div
               onClick={() => setIsMonthly(!isMonthly)}
@@ -53,7 +53,7 @@ const Pricing = () => {
                   : "pointer-events-none text-primary"
               } ml-4 cursor-pointer text-base font-semibold`}
             >
-              anual
+              Anual
             </span>
           </div>
         </div>
@@ -61,47 +61,51 @@ const Pricing = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Basico"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Páginas webs sencillas y económicas. Ideal para dar visibilidad a restaurantes, tiendas y pequeños negocios."
+            price={isMonthly ? "40" : "399"}
+            duration={isMonthly ? "mes" : "año"}
+            subtitle="Páginas webs sencillas y económicas. Ideal para dar visibilidad a restaurantes, tiendas con ventas por redes sociales y pequeños negocios."
           >
-            <OfferList text="diseño increible" status="active" />
-            <OfferList text="dominio personalizado" status="active" />
-            <OfferList text="correo personalizado" status="active" />
-            <OfferList text="pagos por internet" status="inactive" />
-            <OfferList text="base de datos" status="inactive" />
-            <OfferList text="analisis de datos" status="inactive" />
-            <OfferList text="analisis de tráfico" status="inactive" />
+            <OfferList text="Diseño increible" status="active" />
+            <OfferList text="Dominio personalizado" status="active" />
+            <OfferList text="Correo personalizado" status="active" />
+            <OfferList text="Garantía del 50%" status="active" />
+            <OfferList text="Automatización de procesos" status="inactive" />
+            <OfferList text="Pagos por internet" status="inactive" />
+            <OfferList text="Base de datos" status="inactive" />
+            <OfferList text="Analisis de datos" status="inactive" />
+            <OfferList text="Analisis de tráfico" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Profesional"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
+            price={isMonthly ? "80" : "790"}
+            duration={isMonthly ? "mes" : "año"}
             subtitle="Páginas web capaces de gestionar clientes, ventas y productos. Ideal para tiendas online y negocios que busquen expandir sus ventas a todo el pais."
           >
-            <OfferList text="diseño increible" status="active" />
-            <OfferList text="dominio personalizado" status="active" />
-            <OfferList text="correo personalizado" status="active" />
-            <OfferList text="automatización de procesos" status="active" />
-            <OfferList text="pagos por internet" status="active" />
-            <OfferList text="base de datos" status="active" />
-            <OfferList text="analisis de datos" status="inactive" />
-            <OfferList text="analisis de tráfico" status="inactive" />
+            <OfferList text="Diseño increible" status="active" />
+            <OfferList text="Dominio personalizado" status="active" />
+            <OfferList text="Correo personalizado" status="active" />
+            <OfferList text="Garantía del 50%" status="active" />
+            <OfferList text="Automatización de procesos" status="active" />
+            <OfferList text="Pagos por internet" status="active" />
+            <OfferList text="Base de datos" status="active" />
+            <OfferList text="Analisis de datos" status="inactive" />
+            <OfferList text="Analisis de tráfico" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Empresarial"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Páginas web con todas las funcionalidades necesarias para gestionar grandes cantidades de clientes, ventas y productos. Ideal para empresas que busquen expandir sus ventas a todo el mundo. Te permite analizar cada click, cada segundo que pasan en que sección de tu página y mucho más con tal de maximizar las efectividad. "
+            price={isMonthly ? "150" : "1250"}
+            duration={isMonthly ? "mes" : "año"}
+            subtitle="Páginas web con todas las funcionalidades necesarias para gestionar grandes cantidades de clientes, ventas y productos y analisis de datos."
           >
-            <OfferList text="diseño increible" status="active" />
-            <OfferList text="dominio personalizado" status="active" />
-            <OfferList text="correo personalizado" status="active" />
-            <OfferList text="automatización de procesos" status="active" />
-            <OfferList text="pagos por internet" status="active" />
-            <OfferList text="base de datos robusta" status="active" />
-            <OfferList text="analisis de datos" status="active" />
-            <OfferList text="analisis de tráfico" status="active" />
+            <OfferList text="Diseño increible" status="active" />
+            <OfferList text="Dominio personalizado" status="active" />
+            <OfferList text="Correo personalizado" status="active" />
+            <OfferList text="Garantía del 50%" status="active" />
+            <OfferList text="Automatización de procesos" status="active" />
+            <OfferList text="Pagos por internet" status="active" />
+            <OfferList text="Base de datos robusta" status="active" />
+            <OfferList text="Analisis de datos" status="active" />
+            <OfferList text="Analisis de tráfico" status="active" />
           </PricingBox>
         </div>
       </div>

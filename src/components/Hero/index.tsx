@@ -3,39 +3,48 @@ import Link from "next/link";
 import Button from "../button";
 import { Fascinate } from "next/font/google";
 import FadeInSection from "../FadeInSection";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="relative h-screen z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
-        <div className="container">
+        <div className="container mt-[-3vw]">
           <div className="-mx-4 flex flex-wrap ">
           <FadeInSection animationClass="animate-fade-in-up-20 pl-4 w-1/2 min-w-[350px] mx-auto"  threshold={0.25}>
-              <div className="mx-auto max-w-[600px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                Diseños Increibles
-                </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                Crea tu sitio web con los mejores diseños y herramientas de automatización.
+              <div className="mx-auto max-w-[600px] text-center ">
+                <Image  
+                  src="/images/hero/logo_nombre.png"
+                  alt="Hero"
+                  width={300}
+                  height={300}
+                  className="mx-auto max-w-full drop-shadow-three dark:drop-shadow-none "
+                />
+
+                <p className="mb-16 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl pl-16 px-8 text-left">
+                Transformamos ideas en soluciones digitales efectivas, creando sitios y aplicaciones web que impulsan tu negocio hacia adelante.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                  
                   <Button path="/pricing">
                   🔥 Ver Precios
                   </Button>
-                  <Button path="#features" hover={false} color="bg-slate-900">
+                  <Button path="/contact" hover={false} color="bg-slate-900">
                   Contactar
                   </Button>
                 </div>
             </div>
             </FadeInSection>
             <FadeInSection animationClass="animate-fade-in-down-20 w-1/2 min-w-[350px] mx-auto"  threshold={0.25}>
-              <img
-                src="/images/hero/automation.svg"
+              <Image
+                src="/images/hero/foco_cohete.svg"
+                width={300}
+                height={300}
                 alt="Hero"
-                className="mx-auto mt-10 w-full max-w-[750px] sm:mt-0"
+                className="mx-auto w-3/4 max-w-[750px] sm:mt-0"
               />
             </FadeInSection>
 

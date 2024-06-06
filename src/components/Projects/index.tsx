@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Brand } from "@/types/brand";
 import Image from "next/image";
 import projectsData from "./ProjectsData";
+import SectionTitle from "../Common/SectionTitle";
 
 const Projects = () => {
   const firstSliderRef = useRef<HTMLDivElement>(null);
@@ -51,9 +52,11 @@ const Projects = () => {
   return (
     <section className="py-12">
       <div className="container">
-        <h3 className="mb-8 text-3xl font-bold text-black dark:text-white sm:text-4xl sm:mb-14 ml-2 sm:ml-4">
-          Ultimos Proyectos
-        </h3>
+        <SectionTitle
+          title='Diseños Increibles'
+          paragraph='Juntos crearemos una interfaz visual innovadora y exclusiva que refleje la esencia de tu marca.'
+          center
+        />
         <div className="relative overflow-hidden w-full mb-6">
           <div className="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-white via-transparent to-transparent opacity-75 pointer-events-none z-10 dark:from-gray-900"></div>
           <div className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-white via-transparent to-transparent opacity-75 pointer-events-none z-10 dark:from-gray-900"></div>
@@ -91,10 +94,7 @@ const ProjectBrand = ({ brand, visibleProjects }: { brand: Brand, visibleProject
 
   return (
     <div className={`flex justify-center items-center flex-shrink-0 rounded h-[15rem]`}>
-      <a
-        href={href}
-        target="_blank"
-        rel="nofollow noreferrer"
+      <div
         className="relative w-full opacity-80 transition hover:opacity-100 dark:opacity-90 dark:hover:opacity-100 flex justify-center items-center rounded"
       >
         <Image
@@ -104,7 +104,7 @@ const ProjectBrand = ({ brand, visibleProjects }: { brand: Brand, visibleProject
           height={100}
           className="w-[25rem] rounded"
         />
-      </a>
+      </div>
     </div>
   );
 };

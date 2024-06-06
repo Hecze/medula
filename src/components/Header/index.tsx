@@ -11,25 +11,25 @@ const Header = (locale: any) => {
   const menuData: Menu[] = [
     {
       id: 1,
-      title: 'home',
+      title: 'Home',
       path: "/",
       newTab: false,
     },
     {
       id: 2,
-      title: 'pricing',
+      title: 'Pricing',
       path:  "/pricing",
       newTab: false,
     },
     {
       id: 3,
-      title: 'about',
+      title: 'About',
       path: "/about",
       newTab: false,
     },
     {
       id: 4,
-      title: 'contact',
+      title: 'Contact',
       path: "/contact",
       newTab: false,
     },
