@@ -26,7 +26,7 @@ const PricingBox = (props: {
         <p className="mb-7 text-base text-body-color">{subtitle}</p>
         <div className="mb-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
           <Link 
-            href="/contact"
+            href={`https://api.whatsapp.com/send/?phone=921897249&text=Estoy%20interesado%20en%20el%20plan%20${packageName}&type=phone_number&app_absent=0`}
           className="flex w-full items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
             Empezar
           </Link>
