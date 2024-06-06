@@ -39,6 +39,8 @@ const AboutSectionOne = () => {
 
 
             <div className="w-full px-4 lg:w-1/2">
+            <FadeInSection animationClass="animate-fade-in-up-10" threshold={0.3}>
+
               <div className="relative mx-auto aspect-[25/24] max-w-[600px] lg:mr-0">
                 <Image
                   src="/images/about/puñitos.svg"
@@ -53,6 +55,8 @@ const AboutSectionOne = () => {
                   className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 opacity-95"
                 />
               </div>
+              </FadeInSection>
+
             </div>
           </div>
         </div>
