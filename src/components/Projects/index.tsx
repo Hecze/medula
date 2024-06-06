@@ -1,10 +1,10 @@
 "use client";
-
 import React, { useEffect, useRef, useState } from "react";
 import { Brand } from "@/types/brand";
 import Image from "next/image";
 import projectsData from "./ProjectsData";
 import SectionTitle from "../Common/SectionTitle";
+import FadeInSection from "@/components/FadeInSection";
 
 const Projects = () => {
   const firstSliderRef = useRef<HTMLDivElement>(null);
@@ -51,37 +51,40 @@ const Projects = () => {
 
   return (
     <section className="py-12">
-      <div className="container">
-        <SectionTitle
-          title='Diseños Increibles'
-          paragraph='Juntos crearemos una interfaz visual innovadora y exclusiva que refleje la esencia de tu marca.'
-          center
-        />
-        <div className="relative overflow-hidden w-full mb-6">
-          <div className="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-white via-transparent to-transparent opacity-75 pointer-events-none z-10 dark:from-gray-900"></div>
-          <div className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-white via-transparent to-transparent opacity-75 pointer-events-none z-10 dark:from-gray-900"></div>
-          <div ref={firstSliderRef} className="flex w-full gap-4">
-            {firstHalf.map((brand) => (
-              <ProjectBrand key={brand.id} brand={brand} visibleProjects={visibleProjects} />
-            ))}
-            {firstHalf.map((brand) => (
-              <ProjectBrand key={`${brand.id}-duplicate-1`} brand={brand} visibleProjects={visibleProjects} />
-            ))}
+      <FadeInSection animationClass="animate-fade-in-down-10" threshold={0.05}>
+
+        <div className="container">
+          <SectionTitle
+            title='Diseños Increibles'
+            paragraph='Juntos crearemos una interfaz visual innovadora y exclusiva que refleje la esencia de tu marca.'
+            center
+          />
+          <div className="relative overflow-hidden w-full mb-6">
+            <div className="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-white via-transparent to-transparent opacity-75 pointer-events-none z-10 dark:from-gray-900"></div>
+            <div className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-white via-transparent to-transparent opacity-75 pointer-events-none z-10 dark:from-gray-900"></div>
+            <div ref={firstSliderRef} className="flex w-full gap-4">
+              {firstHalf.map((brand) => (
+                <ProjectBrand key={brand.id} brand={brand} visibleProjects={visibleProjects} />
+              ))}
+              {firstHalf.map((brand) => (
+                <ProjectBrand key={`${brand.id}-duplicate-1`} brand={brand} visibleProjects={visibleProjects} />
+              ))}
+            </div>
+          </div>
+          <div className="relative overflow-hidden w-full mb-6">
+            <div className="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-white via-transparent to-transparent opacity-75 pointer-events-none z-10 dark:from-gray-900"></div>
+            <div className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-white via-transparent to-transparent opacity-75 pointer-events-none z-10 dark:from-gray-900"></div>
+            <div ref={secondSliderRef} className="flex w-full gap-4">
+              {secondHalf.map((brand) => (
+                <ProjectBrand key={brand.id} brand={brand} visibleProjects={visibleProjects} />
+              ))}
+              {secondHalf.map((brand) => (
+                <ProjectBrand key={`${brand.id}-duplicate-2`} brand={brand} visibleProjects={visibleProjects} />
+              ))}
+            </div>
           </div>
         </div>
-        <div className="relative overflow-hidden w-full mb-6">
-          <div className="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-white via-transparent to-transparent opacity-75 pointer-events-none z-10 dark:from-gray-900"></div>
-          <div className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-white via-transparent to-transparent opacity-75 pointer-events-none z-10 dark:from-gray-900"></div>
-          <div ref={secondSliderRef} className="flex w-full gap-4">
-            {secondHalf.map((brand) => (
-              <ProjectBrand key={brand.id} brand={brand} visibleProjects={visibleProjects} />
-            ))}
-            {secondHalf.map((brand) => (
-              <ProjectBrand key={`${brand.id}-duplicate-2`} brand={brand} visibleProjects={visibleProjects} />
-            ))}
-          </div>
-        </div>
-      </div>
+      </FadeInSection>
     </section>
   );
 };
