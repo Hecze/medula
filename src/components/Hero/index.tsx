@@ -14,8 +14,7 @@ const Hero = () => {
       >
         <div className="container mt-[-3vw]">
           <div className="-mx-4 flex flex-wrap ">
-          <FadeInSection animationClass="animate-fade-in-up-20 pl-4 w-1/2 min-w-[350px] mx-auto"  threshold={0.25}>
-              <div className="mx-auto max-w-[600px] text-center ">
+              <div className="mx-auto max-w-[600px] text-center animate-fade-in-up-20 pl-4 w-1/2 min-w-[350px] mx-auto">
                 <Image  
                   src="/images/hero/logo_nombre.svg"
                   alt="Hero"
@@ -37,8 +36,7 @@ const Hero = () => {
                   </Button>
                 </div>
             </div>
-            </FadeInSection>
-            <FadeInSection animationClass="animate-fade-in-down-20 w-1/2 min-w-[350px] mx-auto hidden lg:grid"  threshold={0.25}>
+            <div className=" w-1/2 min-w-[350px] mx-auto hidden lg:grid animate-fade-in-down-20">
               <Image
                 src="/images/hero/foco_cohete.svg"
                 width={300}
@@ -46,7 +44,8 @@ const Hero = () => {
                 alt="Hero"
                 className=" mx-auto w-3/4 max-w-[750px] sm:mt-0"
               />
-            </FadeInSection>
+            </div>
+
 
           </div>
         </div>
