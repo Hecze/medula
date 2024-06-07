@@ -9,9 +9,14 @@ import Techonology from '@/components/Technology';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.ico",
+
+  },
   title: "Médula | Diseños increibles",
-  description: "Software Automation, Web Development | Médula",
+  description: "Páginas Web, Soluciones Digitales | Médula",
 };
+
 
 export default function Home() {
   return (

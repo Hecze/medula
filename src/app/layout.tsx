@@ -16,8 +16,12 @@ export default function LocaleLayout({
     document.documentElement.classList.add('dark');
   }
 
+
   return (
     <html lang={locale}>
+      <head>
+        <link rel="icon" href="/images/favicon.ico" sizes="any" />
+      </head>
       <body>
         <Providers>
           <Header locale={locale} />
