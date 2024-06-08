@@ -1,20 +1,20 @@
-"use client";
+"use client"
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 import FadeInSection from "../FadeInSection";
 
-
 const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
+  const [webIsMonthly, setWebIsMonthly] = useState(true);
+  const [appIsMonthly, setAppIsMonthly] = useState(true);
 
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-12 lg:py-14">
       <div className="container animate-fade-in-down-10">
         <SectionTitle
-          title="Precios"
-          paragraph="Los precios son durante el primer año, después de este periodo la tarifa se reduce a la mitad. Si tienes alguna duda en cual paquete es el mejor para ti, no dudes en contactarnos. Estamos aquí para ayudarte."
+          title="Páginas Web"
+          paragraph="Los precios son durante el primer año, después de este periodo la tarifa se reduce a la mitad. Si tienes alguna duda en cuál paquete es el mejor para ti, no dudes en contactarnos. Estamos aquí para ayudarte."
           center
           width="665px"
         />
@@ -22,37 +22,114 @@ const Pricing = () => {
         <div className="w-full">
           <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
             <span
-              onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
-                  ? "pointer-events-none text-primary"
-                  : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
+              onClick={() => setWebIsMonthly(true)}
+              className={`${webIsMonthly ? "pointer-events-none text-primary" : "text-dark dark:text-white"} mr-4 cursor-pointer text-base font-semibold`}
             >
               Mensual
             </span>
-            <div
-              onClick={() => setIsMonthly(!isMonthly)}
-              className="flex cursor-pointer items-center"
-            >
+            <div onClick={() => setWebIsMonthly(!webIsMonthly)} className="flex cursor-pointer items-center">
               <div className="relative">
                 <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
-                <div
-                  className={`${
-                    isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
-                >
+                <div className={`${webIsMonthly ? "" : "translate-x-full"} shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}>
                   <span className="active h-4 w-4 rounded-full bg-white"></span>
                 </div>
               </div>
             </div>
             <span
-              onClick={() => setIsMonthly(false)}
-              className={`${
-                isMonthly
-                  ? "text-dark dark:text-white"
-                  : "pointer-events-none text-primary"
-              } ml-4 cursor-pointer text-base font-semibold`}
+              onClick={() => setWebIsMonthly(false)}
+              className={`${webIsMonthly ? "text-dark dark:text-white" : "pointer-events-none text-primary"} ml-4 cursor-pointer text-base font-semibold`}
+            >
+              Anual
+            </span>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 pb-24 grid-center">
+          <PricingBox
+            packageName="Básico"
+            price={webIsMonthly ? "40" : "399"}
+            duration={webIsMonthly ? "mes" : "año"}
+            subtitle="Páginas webs sencillas y económicas. Ideal para dar visibilidad a restaurantes, tiendas con ventas por redes sociales y pequeños negocios."
+          >
+            <OfferList text="Garantía del 50%" status="active" />
+            <OfferList text="Diseño increíble" status="active" />
+            <OfferList text="Dominio personalizado" status="active" />
+            <OfferList text="Correo personalizado" status="active" />
+            <OfferList text="Catálogo de servicios o productos" status="active" />
+            <OfferList text="Enlaces a redes sociales" status="active" />
+            <OfferList text="Optimizado para celulares" status="active" />
+            <OfferList text="Mantenimiento incluido" status="active" />
+            <OfferList text="Chatbot asistente" status="inactive" />
+            <OfferList text="Análisis de tráfico" status="inactive" />
+            <OfferList text="Pagos por internet" status="inactive" />
+            <OfferList text="Traducción" status="inactive" />
+          </PricingBox>
+          <PricingBox
+            packageName="Profesional"
+            price={webIsMonthly ? "80" : "790"}
+            duration={webIsMonthly ? "mes" : "año"}
+            subtitle="Páginas web capaces de gestionar clientes, ventas y productos. Ideal para tiendas online y negocios que busquen expandir sus ventas."
+          >
+            <OfferList text="Garantía del 50%" status="active" />
+            <OfferList text="Diseño increíble" status="active" />
+            <OfferList text="Dominio personalizado" status="active" />
+            <OfferList text="Correo personalizado" status="active" />
+            <OfferList text="Catálogo de servicios o productos" status="active" />
+            <OfferList text="Enlaces a redes sociales" status="active" />
+            <OfferList text="Optimizado para celulares" status="active" />
+            <OfferList text="Mantenimiento incluido" status="active" />
+            <OfferList text="Chatbot asistente" status="active" />
+            <OfferList text="Análisis de tráfico" status="active" />
+            <OfferList text="Pagos por internet" status="active" />
+            <OfferList text="Traducción" status="active" />
+          </PricingBox>
+          <PricingBox
+            packageName="Personalizado"
+            price="X"
+            duration="Y"
+            subtitle="Soluciones web completamente personalizadas para satisfacer necesidades específicas. Ideal para proyectos únicos y complejos."
+          >
+            <OfferList text="Garantía del 50%" status="active" />
+            <OfferList text="Diseño a medida" status="active" />
+            <OfferList text="Dominio personalizado" status="active" />
+            <OfferList text="Correo personalizado" status="active" />
+            <OfferList text="Funcionalidades a medida" status="active" />
+            <OfferList text="Enlaces a redes sociales" status="active" />
+            <OfferList text="Optimizado para celulares" status="active" />
+            <OfferList text="Mantenimiento incluido" status="active" />
+            <OfferList text="Chatbot asistente" status="active" />
+            <OfferList text="Análisis de tráfico" status="active" />
+            <OfferList text="Pagos por internet" status="active" />
+            <OfferList text="Traducción" status="active" />
+          </PricingBox>
+        </div>
+
+        <SectionTitle
+          title="Aplicaciones Móviles"
+          paragraph="Los precios son durante el primer año, después de este periodo la tarifa se reduce a la mitad. Si tienes alguna duda en cuál paquete es el mejor para ti, no dudes en contactarnos. Estamos aquí para ayudarte."
+          center
+          width="665px"
+        />
+
+        <div className="w-full">
+          <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
+            <span
+              onClick={() => setAppIsMonthly(true)}
+              className={`${appIsMonthly ? "pointer-events-none text-primary" : "text-dark dark:text-white"} mr-4 cursor-pointer text-base font-semibold`}
+            >
+              Mensual
+            </span>
+            <div onClick={() => setAppIsMonthly(!appIsMonthly)} className="flex cursor-pointer items-center">
+              <div className="relative">
+                <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
+                <div className={`${appIsMonthly ? "" : "translate-x-full"} shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}>
+                  <span className="active h-4 w-4 rounded-full bg-white"></span>
+                </div>
+              </div>
+            </div>
+            <span
+              onClick={() => setAppIsMonthly(false)}
+              className={`${appIsMonthly ? "text-dark dark:text-white" : "pointer-events-none text-primary"} ml-4 cursor-pointer text-base font-semibold`}
             >
               Anual
             </span>
@@ -61,52 +138,61 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Basico"
-            price={isMonthly ? "40" : "399"}
-            duration={isMonthly ? "mes" : "año"}
-            subtitle="Páginas webs sencillas y económicas. Ideal para dar visibilidad a restaurantes, tiendas con ventas por redes sociales y pequeños negocios."
+            packageName="Básico"
+            price={appIsMonthly ? "150" : "1250"}
+            duration={appIsMonthly ? "mes" : "año"}
+            subtitle="Aplicaciones móviles con funcionalidades esenciales. Ideal para pequeñas empresas y startups."
           >
-            <OfferList text="Diseño increible" status="active" />
-            <OfferList text="Dominio personalizado" status="active" />
-            <OfferList text="Correo personalizado" status="active" />
             <OfferList text="Garantía del 50%" status="active" />
-            <OfferList text="Automatización de procesos" status="inactive" />
-            <OfferList text="Pagos por internet" status="inactive" />
-            <OfferList text="Base de datos" status="inactive" />
-            <OfferList text="Analisis de datos" status="inactive" />
-            <OfferList text="Analisis de tráfico" status="inactive" />
+            <OfferList text="Diseño increíble" status="active" />
+            <OfferList text="Soporte Android e iOS" status="active" />
+            <OfferList text="Funcionalidades básicas" status="active" />
+            <OfferList text="Pasarela de pagos" status="active" />
+            <OfferList text="Notificaciones push" status="active" />
+            <OfferList text="Mantenimiento incluido" status="active" />
+            <OfferList text="Geolocalización y mapas" status="inactive" />
+            <OfferList text="Actualizaciones regulares" status="inactive" />
+            <OfferList text="Soporte técnico 24/7" status="inactive" />
+            <OfferList text="Análisis de datos" status="inactive" />
+            <OfferList text="Inteligencia artificial" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Profesional"
-            price={isMonthly ? "80" : "790"}
-            duration={isMonthly ? "mes" : "año"}
-            subtitle="Páginas web capaces de gestionar clientes, ventas y productos. Ideal para tiendas online y negocios que busquen expandir sus ventas a todo el pais."
+            price={appIsMonthly ? "250" : "2000"}
+            duration={appIsMonthly ? "mes" : "año"}
+            subtitle="Aplicaciones móviles avanzadas con características completas. Ideal para empresas que buscan expansión y crecimiento."
           >
-            <OfferList text="Diseño increible" status="active" />
-            <OfferList text="Dominio personalizado" status="active" />
-            <OfferList text="Correo personalizado" status="active" />
             <OfferList text="Garantía del 50%" status="active" />
-            <OfferList text="Automatización de procesos" status="active" />
-            <OfferList text="Pagos por internet" status="active" />
-            <OfferList text="Base de datos" status="active" />
-            <OfferList text="Analisis de datos" status="inactive" />
-            <OfferList text="Analisis de tráfico" status="inactive" />
+            <OfferList text="Diseño increíble" status="active" />
+            <OfferList text="Soporte Android e iOS" status="active" />
+            <OfferList text="Funcionalidades básicas" status="active" />
+            <OfferList text="Pasarela de pagos" status="active" />
+            <OfferList text="Notificaciones push" status="active" />
+            <OfferList text="Mantenimiento incluido" status="active" />
+            <OfferList text="Geolocalización y mapas" status="active" />
+            <OfferList text="Actualizaciones regulares" status="active" />
+            <OfferList text="Soporte técnico 24/7" status="active" />
+            <OfferList text="Análisis de datos" status="active" />
+            <OfferList text="Inteligencia artificial" status="active" />
           </PricingBox>
           <PricingBox
-            packageName="Empresarial"
-            price={isMonthly ? "150" : "1250"}
-            duration={isMonthly ? "mes" : "año"}
-            subtitle="Páginas web con todas las funcionalidades necesarias para gestionar grandes cantidades de clientes, ventas y productos y analisis de datos."
+            packageName="Personalizado"
+            price="X"
+            duration="Y"
+            subtitle="Aplicaciones móviles completamente personalizadas para satisfacer necesidades específicas. Ideal para proyectos únicos y complejos."
           >
-            <OfferList text="Diseño increible" status="active" />
-            <OfferList text="Dominio personalizado" status="active" />
-            <OfferList text="Correo personalizado" status="active" />
             <OfferList text="Garantía del 50%" status="active" />
-            <OfferList text="Automatización de procesos" status="active" />
-            <OfferList text="Pagos por internet" status="active" />
-            <OfferList text="Base de datos robusta" status="active" />
-            <OfferList text="Analisis de datos" status="active" />
-            <OfferList text="Analisis de tráfico" status="active" />
+            <OfferList text="Diseño a medida" status="active" />
+            <OfferList text="Soporte Android e iOS" status="active" />
+            <OfferList text="Funcionalidades a medida" status="active" />
+            <OfferList text="Pasarela de pagos" status="active" />
+            <OfferList text="Notificaciones push" status="active" />
+            <OfferList text="Mantenimiento incluido" status="active" />
+            <OfferList text="Geolocalización y mapas" status="active" />
+            <OfferList text="Actualizaciones regulares" status="active" />
+            <OfferList text="Soporte técnico 24/7" status="active" />
+            <OfferList text="Análisis de datos" status="active" />
+            <OfferList text="Inteligencia artificial" status="active" />
           </PricingBox>
         </div>
       </div>
