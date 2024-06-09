@@ -38,9 +38,9 @@ const Hero = () => {
             </div>
             <div className=" w-1/2 min-w-[350px] mx-auto hidden lg:grid animate-fade-in-down-20">
               <Image
-                src="/images/hero/foco_cohete.svg"
-                width={300}
-                height={300}
+                src="/images/hero/foco_cohete.webp"
+                width={1744}
+                height={2231}
                 alt="Hero"
                 className=" mx-auto w-3/4 max-w-[750px]"
               />

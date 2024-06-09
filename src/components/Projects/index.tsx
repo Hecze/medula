@@ -103,8 +103,8 @@ const ProjectBrand = ({ brand, visibleProjects }: { brand: Brand, visibleProject
         <Image
           src={imageLight}
           alt={name}
-          width={100}
-          height={100}
+          width={1053}
+          height={616}
           className="w-[25rem] rounded"
         />
       </div>
