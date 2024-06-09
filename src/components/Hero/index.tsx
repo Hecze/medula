@@ -20,10 +20,10 @@ const Hero = () => {
                   alt="Hero"
                   width={300}
                   height={300}
-                  className="mx-auto max-w-full drop-shadow-three dark:drop-shadow-none "
+                  className="mx-auto  xl:w-[20vw] xl:max-w-80  drop-shadow-three dark:drop-shadow-none "
                 />
 
-                <p className="mb-16 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl pl-12 px-6 md:pl-16 md:px-8  text-left">
+                <p className="mb-16 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg pl-12 px-6 md:pl-16 md:px-8  text-left">
                 Transformamos ideas en soluciones digitales efectivas, creando sitios y aplicaciones web que impulsan tu negocio hacia adelante.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -45,8 +45,6 @@ const Hero = () => {
                 className=" mx-auto w-3/4 max-w-[750px]"
               />
             </div>
-
-
           </div>
         </div>
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
