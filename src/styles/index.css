@@ -32,3 +32,8 @@
     @apply opacity-100;
   }
 }
+
+.icon-border {
+  border: 1px solid #c5c7fe;
+}
+

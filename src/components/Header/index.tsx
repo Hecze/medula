@@ -17,8 +17,9 @@ const Header = (locale: any) => {
     },
     {
       id: 2,
-      title: 'Pricing',
-      path: "/pricing",
+
+      title: 'Laboratory',
+      path: "/laboratory",
       newTab: false,
     },
     {
@@ -33,6 +34,13 @@ const Header = (locale: any) => {
       path: "/contact",
       newTab: false,
     },
+
+    {
+      id: 5,
+      title: 'Pricing',
+      path: "/pricing",
+      newTab: false,
+    }
 
   ];
   // Navbar toggle
