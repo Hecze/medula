@@ -47,24 +47,14 @@ const AboutSectionTwo = () => {
                 <div className="mb-9">
 
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    Nuestros Valores
+                    Nuestros Team
                   </h3>
                   <ul className="list-disc list-inside text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    <List text="Pensamiento lateral y disruptivo" />
-                    <List text="Inversión en talento joven" />
-                    <List text="Flexibilidad laboral" />
-                    <List text="Pasión y compromiso" />
-                  </ul>
-                </div>
-                <div className="mb-1">
-                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    Nuestro Compromiso
-                  </h3>
-                  <ul className="list-disc list-inside text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    <List text="Ofrecer servicios de alta calidad" />
-                    <List text="Nutrir a la próxima generación de innovadores tecnológicos" />
-                    <List text="Mantener un ambiente de trabajo creativo y libre de toxicidad" />
-                    <List text="Fomentar la creatividad y la innovación" />
+                    <List text="Hector Manuel Zerrillo Gonzales" />
+                    <List text="Esther Noemi Ticlla Vento" />
+                    <List text="Alexander Adrian Flores Solar" />
+                    <List text="Alcaro Enrique Cencia Perez" />
+                    <List text="Alcaro Enrique Cencia Perez" />
                   </ul>
                 </div>
               </FadeInSection>
